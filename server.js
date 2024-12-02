@@ -11,11 +11,7 @@ import orderRouter from "./routes/orderRouter.js";
 // App Config
 const app = express();
 const port = process.env.PORT || 4000;
-const corsOptions = {
-  origin: 'https://admin-fullstack-kohl.vercel.app/',
-  credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors())
 connectDB();
 connectCloudinary();
 
