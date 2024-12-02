@@ -18,7 +18,7 @@ connectCloudinary();
 //middlewares
 app.use(express.json());
 
-const allowedOrigins = [
+/*const allowedOrigins = [
     "https://artnakkk-frontend-admin.vercel.app",
     "http://localhost:5175", // For local development
     "http://localhost:5176",
@@ -40,7 +40,7 @@ const allowedOrigins = [
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true, // Allow cookies or Authorization headers
     })
-  );
+  );*/
 
 //app endpoints
 app.use("/api/user", userRouter);
